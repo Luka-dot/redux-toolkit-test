@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Todo from './Todo'
-// import { deleteTodo } from './todosSlice'
 
 const TodoList = ({ todos, toggleTodo, deleteTodo }) => (
   <ul>
