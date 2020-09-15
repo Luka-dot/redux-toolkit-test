@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Todo = ({ onClick, completed, text, id }) => (
+const Todo = ({ onClick, completed, text, id, deleteTodo }) => (
+  <div>
   <li
     onClick={onClick}
     style={{
@@ -9,14 +10,18 @@ const Todo = ({ onClick, completed, text, id }) => (
     }}
   >
    {id} : {text}
-   <button>Delete</button>
+   
   </li>
+  <button onClick={deleteTodo}>Delete</button>
+  </div>
 )
+
 
 Todo.propTypes = {
   onClick: PropTypes.func.isRequired,
   completed: PropTypes.bool.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  deleteTodo: PropTypes.func.isRequired
 }
 
 export default Todo

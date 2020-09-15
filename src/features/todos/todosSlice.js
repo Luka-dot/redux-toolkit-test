@@ -22,8 +22,8 @@ const todosSlice = createSlice({
       }
     },
     deleteTodo(state, action) {
-      const todo = state.find(todo => todo.id === action.payload)
-        state.filter(todo => todo.id !== action.payload)
+      const todoToDelete = state.find(todo => todo.id === action.payload)
+        state.filter(todo => todo.id !== todoToDelete)
     }
   }
 })

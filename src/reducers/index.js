@@ -4,5 +4,6 @@ import visibilityFilterReducer from '../features/filters/filtersSlice'
 
 export default combineReducers({
   todos: todosReducer,
-  visibilityFilter: visibilityFilterReducer
+  visibilityFilter: visibilityFilterReducer,
+  deleteTodo: todosReducer
 })
