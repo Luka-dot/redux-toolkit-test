@@ -20,6 +20,10 @@ const todosSlice = createSlice({
       if (todo) {
         todo.completed = !todo.completed
       }
+    },
+    deleteTodo(state, action) {
+      const todo = state.find(todo => todo.id === action.payload)
+        state.filter(todo => todo.id !== action.payload)
     }
   }
 })
