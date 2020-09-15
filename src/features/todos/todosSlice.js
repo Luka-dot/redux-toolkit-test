@@ -23,7 +23,8 @@ const todosSlice = createSlice({
     },
     deleteTodo(state, action) {
       const todoToDelete = state.find(todo => todo.id === action.payload)
-        state.filter(todo => todo.id !== todoToDelete)
+      console.log('click ', todoToDelete)
+      state.pop(todoToDelete)
     }
   }
 })

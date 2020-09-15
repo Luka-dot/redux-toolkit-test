@@ -1,5 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+// import deleteTodo from './todosSlice'
+
+// const mapDispatch = { deleteTodo }
 
 const Todo = ({ onClick, completed, text, id, deleteTodo }) => (
   <div>
@@ -22,6 +26,9 @@ Todo.propTypes = {
   completed: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
   deleteTodo: PropTypes.func.isRequired
+
+
 }
 
 export default Todo
+
