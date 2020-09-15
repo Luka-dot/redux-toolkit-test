@@ -5,11 +5,9 @@ import VisibleTodoList from '../features/todos/VisibleTodoList'
 
 const App = () => (
   <div>
-    
     <AddTodo />
     <VisibleTodoList />
     <Footer />
-
   </div>
 )
 
