@@ -10,7 +10,9 @@ const filtersSlice = createSlice({
   name: 'visibilityFilters',
   initialState: VisibilityFilters.SHOW_ALL,
   reducers: {
-    
+    setVisibilityFilter(state, action) {
+      return action.payload
+    }
   }
 })
 
